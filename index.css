@@ -1,0 +1,110 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+  
+  .container{
+      position: relative;
+      margin-top: 100px;
+      margin-left: 100px;
+      width: 250px;
+  }
+
+  .select-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: blanchedalmond;
+    border-radius: 8px;
+  }
+
+  .select-btn .btn-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .select-btn .arrow-down{
+    display: flex;
+    background-color: blue;
+    border-radius: 50%;
+    color: beige;
+    height: 21px;
+    width: 21px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .all-items{
+    position: relative;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 16px;
+    display: none;
+  }
+   
+  .all-items .items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+  }
+
+  .select-btn.open ~ .all-items{
+       display: block;
+  }
+
+  .select-btn.open .arrow-down{
+    transform: rotate(-180deg);
+  }
+
+  .items.checked .fa-check{
+    transform: scale(1);
+  }
+
+  .items.checked .fa-check{
+    background-color: blue;
+  }
+
+ .items .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 5px;
+    margin-right: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+
+  
+
+  .all-items .items:hover{
+       background-color: #e7edfe;
+  }
+
+  .checkbox .fa-check{
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .items .item-text{
+      font-size: 16px;
+      font-weight: 400px;
+      color: #333;
+  }
+
+  .arrow-down:hover{
+    visibility: visible;
+  }
